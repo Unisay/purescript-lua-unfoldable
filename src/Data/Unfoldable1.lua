@@ -1,5 +1,5 @@
 return {
-  unfoldr1ArrayImpl = function(isNothing)
+  unfoldr1ArrayImpl = (function(isNothing)
     return function(fromJust)
       return function(fst)
         return function(snd)
@@ -19,5 +19,5 @@ return {
         end
       end
     end
-  end
+  end)
 }
