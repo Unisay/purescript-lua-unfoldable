@@ -9,9 +9,7 @@ return {
               local value = b
               while true do
                 local maybe = f(value)
-                if isNothing(maybe) then
-                  return result
-                end
+                if isNothing(maybe) then return result end
                 local tuple = fromJust(maybe)
                 table.insert(result, fst(tuple))
                 value = snd(tuple)
