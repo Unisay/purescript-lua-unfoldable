@@ -1,11 +1,6 @@
 { name = "purescript-lua-unfoldable"
 , dependencies =
-  [ "foldable-traversable"
-  , "maybe"
-  , "partial"
-  , "prelude"
-  , "tuples"
-  ]
+  [ "foldable-traversable", "maybe", "partial", "prelude", "tuples" ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
 , backend =
